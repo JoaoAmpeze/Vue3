@@ -30,18 +30,22 @@
                 v-model="filmes.descricao"
               ></v-text-field>
             </v-col>
-
-            <v-col cols="12" sm="6">
-              <v-text-field label="Ano" v-model="filmes.filmeAno"></v-text-field>
-            </v-col>
-
-            <v-col cols="12" sm="6">
+            <v-col cols="12" sm="12">
               <v-autocomplete
                 v-model="filmes.categoria"
                 :items="categoras"
                 label="Categoria"
               ></v-autocomplete>
             </v-col>
+
+            <v-col cols="12" sm="6">
+              <v-text-field label="Ano" v-model="filmes.filmeAno"></v-text-field>
+            </v-col>
+
+            <v-col cols="12" sm="6">
+              <v-text-field label="imagem" v-model="filmes.imagem"></v-text-field>
+            </v-col>
+
           </v-row>
         </v-container>
       </v-form>
@@ -71,6 +75,7 @@ export default {
         filmeAno: null,
         descricao: null,
         categoria: null,
+        imagem:null,
       },
 
       headers: [
@@ -139,6 +144,7 @@ export default {
         ano: null,
         descricao: null,
         categoria: null,
+        imagem:null,
       };
       this.ativo = false;
     },
