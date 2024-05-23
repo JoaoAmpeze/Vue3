@@ -17,9 +17,7 @@
 
         <v-list density="compact" nav>
           <v-list-item prepend-icon="mdi-home" to="/" title="Home" value="h"></v-list-item>
-          <v-list-item prepend-icon="mdi-folder" title="Meus Documento" value="myfiles"></v-list-item>
-          <v-list-item prepend-icon="mdi-account-multiple" title="Compartilhar" value="shared"></v-list-item>
-          <v-list-item prepend-icon="mdi-star" title="Favoritos" value="starred"></v-list-item>
+          <v-list-item prepend-icon="mdi-plus" to="/funcao" title="Nova" value="a"></v-list-item>
           <v-list-item prepend-icon="mdi-twitter" to="/x" title="Twiter" value="x"></v-list-item>
           <v-list-item prepend-icon="mdi-table" to="/table" title="Tabela" value="t"></v-list-item>
           <v-list-item prepend-icon="mdi-table" to="/tabelaeditavel" title="Tabela Editavel" value="te"></v-list-item>
